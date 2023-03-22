@@ -1,0 +1,111 @@
+.container{
+    
+    display: grid;
+    grid-template-columns: 3.5fr 0.5fr ;
+    
+    direction: rtl;
+    height:100%;
+    width:100%;
+}
+.opcije{
+    padding:4px;
+    direction: ltr;
+    background-color:var(--main-color);
+    border-radius: 20px;
+    height:50vh;
+}
+.glavni{
+    display:grid;
+    width:100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:12px;
+    direction:ltr;
+}
+
+.komponenta-telo{
+
+    margin:10px;
+    width:100%;
+    border:1px solid black;
+    border-radius:10%;
+    min-height:27vh;
+    max-height:50vh;
+}
+.komponenta-slika{
+    position: absolute;
+    
+    width:8vw;
+    height:16vh;
+
+    top:1vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.komponenta-naslov{
+    text-align:center;
+}
+.komponenta-cena{
+    text-align:center;
+    color:var(--main-color);
+}
+.komponenta-dugme{
+    background-color: var(--dugme-color);
+    
+    border:none;
+    
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .1s ease;
+  position: absolute;
+  bottom:0;
+  right:0;
+}
+.komponenta-dugme:hover{
+    background-color: var(--hover-color);
+}
+.komponenta-dugme2{
+    background-color: var(--dugme-color);
+    
+    border:none;
+    
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .1s ease;
+  position: absolute;
+  bottom:0;
+  right:0;
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  animation: animatedgradient 5s ease alternate infinite;
+  /*
+  background: linear-gradient(60deg,
+  var(--main-color) ,var(--main-color),var(--main-color), var(--dugme-color), var(--dugme-color), var(--dugme-color));
+  */
+  background-size: 300% 300%;
+}
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.komponenta-dugme2:hover .komponenta-dugme2:after{
+    background:black;
+    
+}

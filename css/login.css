@@ -1,0 +1,59 @@
+.forma{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  width:15vw;
+  text-align:center;
+  border-radius: 20px;
+  font-size:30px;
+}
+.naslov{
+    font-weight: bold;
+    font-size:60px;
+}
+.inputtext{
+    width:90%;
+    font-size:30px;
+}
+.dugme{
+    background-color: var(--dugme-color);
+    
+    border:none;
+    border-radius: 30px;
+  color: white;
+  width: 90%;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin-bottom: 5px;
+  margin-top:5px;
+  cursor: pointer;
+  transition: all .1s ease;
+}
+.dugme:hover{
+    background-color: var(--hover-color);
+}
+.textForme{
+    text-align:left;
+    margin-left:5%;
+}
+.inputtext
+{
+  margin-top:5px;
+  margin-bottom:5px;
+  font-size:30px;
+  background-color:rgba(255, 255, 255, 0);
+  padding:8px;border:none;
+  border-bottom:1px solid #ccc;;
+}
+.error{
+    color:rgb(255, 0, 0);
+}
+.success{
+    color:rgb(58, 204, 13);
+}

@@ -1,0 +1,42 @@
+.dugme{
+    background-color: var(--dugme-color);
+    
+    border:none;
+    border-radius: 30px;
+  color: white;
+  width:100px;;;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-bottom: 5px;
+  margin-top:5px;
+  cursor: pointer;
+  transition: all .1s ease;
+}
+.dugme:hover{
+    background-color: var(--hover-color);
+}
+.inputtext
+{
+  margin-top:5px;
+
+  font-size:18px;
+  background-color:rgba(255, 255, 255, 0);
+  padding:8px;border:none;
+  border-bottom:1px solid #ccc;;
+}
+.mainContainer{
+ display:flex;
+ justify-content: center;;
+ align-content: center;;
+ align-items:center;
+ flex-direction: column;
+}
+.edit{
+    text-align:center;
+    display:flex;
+    flex-direction: row;
+    gap:50px;
+}

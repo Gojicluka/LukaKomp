@@ -1,0 +1,53 @@
+@font-face
+{
+    font-family: adamlight;
+    src: url("../fonts/Adam-Light.ttf")
+}
+
+
+.pozadina{
+    height:50vh;
+    
+    background-image: url("../img/nature.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.video-container:before{
+  content:"";
+  position: absolute;
+  height: 100%;
+    width: 100%;
+    background:linear-gradient(45deg, #523f3854,#1ea8965d);
+    /*
+  background:linear-gradient(to right,rgba(65, 0, 255, 0.4),rgba(255, 0, 232, 0.3));
+  */
+  background-color:rgba(0, 0, 0, 0.685);
+  z-index:1;
+}
+
+.video{
+  
+  position:absolute;
+  bottom:0;
+  top:0;
+  z-index: 0;
+}
+
+.naslov{
+  
+  position: absolute;
+top: 45%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+  font-size:100px;
+  color:white;
+  font-family: adamlight;
+  
+  
+  z-index:2;
+}

@@ -1,0 +1,65 @@
+.container{
+    display:grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto auto auto;
+    margin-bottom:1px;
+}
+.container > div{
+    
+    text-align:center;
+    
+}
+.container .naslov,.kolicina,.cena,.obrisi{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.main{
+    margin-left:30vw;
+    margin-right:30vw;
+}
+
+.slika{
+    width:75px;
+    height:75px;
+}
+.dugme{
+    
+    background-color: var(--dugme-color);
+    font-family: leonmilk;
+    border:none;
+  color: white;
+  width: 50%;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  cursor: pointer;
+  transition: all .1s ease;
+}
+.dugme:hover{
+    background-color: var(--hover-color);
+}
+.obrisi{
+    text-align:center;
+    justify-self:center;
+}
+.inputOption{
+    border:none;
+    background-color:red;
+    color:white;
+    width:30px;
+}
+.inputOption:hover{
+    cursor: pointer;
+    background-color:rgb(124, 24, 24);
+}
+.dugmence{
+    
+}
+.dugmence:hover{
+    background-color: rgb(128, 128, 128);
+}

@@ -1,0 +1,65 @@
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    border:10px solid  var(--main-color);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+.slike{
+    
+}
+.dugme{
+    background-color: var(--dugme-color);
+    
+    border:none;
+    border-radius: 10px;
+  color: white;
+  width: 40%;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  transition: all .1s ease;
+}
+.dugme:hover{
+    background-color: var(--hover-color);
+}
+.slika{
+    width:500px;
+    height:500px;
+}
+.secSlika{
+    
+    width:75px;
+    height:75px;
+    padding:0;
+    margin:0;
+}
+.secondaryImg{
+    margin:0;
+    padding:0;
+}
+.container2{
+}
+.centerContainer2{
+    text-align: center;
+    margin-top:10%;
+    font-size:25px;
+}
+.naslov{
+    text-align:center;font-size:60px;
+    background-color: var(--main-color);
+    color:white
+}
+.dugmence{
+    color:white;
+    border:none;
+    cursor:pointer;
+    border:2px solid black;
+}
+.dugmence:hover{
+    background-color: rgba(0, 0, 0, 0.335);
+}

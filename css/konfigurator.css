@@ -1,0 +1,88 @@
+.mainContainer{
+
+}
+
+.container2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    overflow: auto;
+    height:29vh;
+    width:100%;
+    margin: auto;
+
+  margin: 0 auto;
+}
+.komponenta-telo{
+    margin:10px;
+    width:90%;
+    border:1px solid black;
+    border-radius:10%;
+    min-height:25vh;
+    max-height:50vh;
+    min-height: none;
+    max-height: none;
+    height:0;
+    height:auto
+}
+
+.komponenta-slika{
+    position: absolute;
+    
+    width:7vw;
+    height:12vh;
+
+    top:1vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.komponenta-naslov{
+    text-align:center;
+    font-size:15px;
+}
+.komponenta-cena{
+    
+}
+.komponenta-dugme{
+    
+}
+.komponenta-dugme:hover{
+    
+}
+
+.dugme{
+    background-color: var(--dugme-color);
+    font-family: leonmilk;
+    border:none;
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  cursor: pointer;
+  transition: all .1s ease;
+}
+.dugme:hover{
+    background-color: var(--hover-color);
+}
+.animiran-text {
+    text-align: center;
+    background: linear-gradient(60deg, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad);
+    background: linear-gradient(60deg, var(--main-color), var(--dugme-color),var(--main-color), var(--dugme-color),var(--main-color));
+    background-size: 200% auto;
+    
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: shine 5s linear infinite;
+   
+  }
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
